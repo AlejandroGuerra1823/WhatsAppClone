@@ -1,12 +1,20 @@
 import React from 'react'
-import { Text, View } from 'react-native'
+import { FlatList, Text, View } from 'react-native'
+import data from '../../config/API/dummyData.json'
+import CardChat from './Components/CardChat'
 
 export const PrincipalScreen = () => {
   return (
- <View>
-  <Text>
-    Hola
-  </Text>
- </View>
+    <FlatList
+      data={data.chats}
+      style={{flex: 1}}
+      renderItem={(data) => (
+        <View>
+          <Text>
+            hola
+          </Text>
+        <CardChat />
+        </View>
+      )} />
   )
 }

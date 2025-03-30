@@ -1,10 +1,11 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { PrincipalScreen } from '../screens/PrincipalScreen/PrincipalScreen';
-import { Horse, Heart, Cube } from 'phosphor-react-native';
+import { Horse, Balloon, ChatsTeardrop } from 'phosphor-react-native';
+import StatusScreen from '../screens/Status/StatusScreen';
 
 export type BottomStackParams = {
-    PrincipalScreen: undefined;
-    DetailScreen: undefined;
+    Chats: undefined;
+    Estados: undefined;
 };
 
 const Tab = createBottomTabNavigator<BottomStackParams>();
@@ -12,13 +13,20 @@ const Tab = createBottomTabNavigator<BottomStackParams>();
 export const HomeBottomTabNavigation = () => {
     return (
         <Tab.Navigator
-            initialRouteName="PrincipalScreen">
-            <Tab.Screen name="PrincipalScreen" component={PrincipalScreen}
+            initialRouteName="Chats">
+            <Tab.Screen name="Chats" component={PrincipalScreen}
                 options={{
                     tabBarLabel: 'Chats',
                     tabBarIcon: ({focused}) => (
-                        <Horse />
+                        <ChatsTeardrop />
                     )
+                }} />
+            <Tab.Screen name="Estados" component={StatusScreen}
+                options={{
+                    tabBarLabel: 'Estados',
+                    tabBarIcon: ({focused}) => (
+                        <Balloon />
+                    ),
                 }} />
         </Tab.Navigator>
     );

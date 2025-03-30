@@ -1,0 +1,157 @@
+{
+    "users": [
+      {
+        "id": "1",
+        "name": "Alejandro Gómez",
+        "phone": "+57 300 1234567",
+        "profilePicture": "https://randomuser.me/api/portraits/men/1.jpg",
+        "about": "Disponible",
+        "lastSeen": "2025-03-16T14:20:00Z"
+      },
+      {
+        "id": "2",
+        "name": "María Pérez",
+        "phone": "+57 310 9876543",
+        "profilePicture": "https://randomuser.me/api/portraits/women/2.jpg",
+        "about": "En el gym 🏋️‍♂️",
+        "lastSeen": "2025-03-16T15:30:00Z"
+      },
+      {
+        "id": "3",
+        "name": "Carlos Ramírez",
+        "phone": "+57 315 2223344",
+        "profilePicture": "https://randomuser.me/api/portraits/men/3.jpg",
+        "about": "Ocupado 🚫",
+        "lastSeen": "2025-03-16T12:10:00Z"
+      },
+      {
+        "id": "4",
+        "name": "Laura Torres",
+        "phone": "+57 320 5566778",
+        "profilePicture": "https://randomuser.me/api/portraits/women/4.jpg",
+        "about": "Estudiando 📖",
+        "lastSeen": "2025-03-16T16:00:00Z"
+      }
+    ],
+    "chats": [
+      {
+        "chatId": "chat_1",
+        "participants": ["1", "2"],
+        "messages": [
+          {
+            "id": "msg_1",
+            "senderId": "1",
+            "text": "Hola, ¿cómo estás?",
+            "timestamp": "2025-03-16T14:21:00Z",
+            "status": "read"
+          },
+          {
+            "id": "msg_2",
+            "senderId": "2",
+            "text": "¡Hola! Todo bien, ¿y tú?",
+            "timestamp": "2025-03-16T14:22:30Z",
+            "status": "read"
+          }
+        ]
+      },
+      {
+        "chatId": "chat_2",
+        "participants": ["1", "3"],
+        "messages": [
+          {
+            "id": "msg_3",
+            "senderId": "3",
+            "text": "Ey bro, ¿vienes al partido?",
+            "timestamp": "2025-03-16T13:45:00Z",
+            "status": "delivered"
+          },
+          {
+            "id": "msg_4",
+            "senderId": "1",
+            "text": "Sí, claro! A las 6, ¿cierto?",
+            "timestamp": "2025-03-16T13:46:30Z",
+            "status": "delivered"
+          }
+        ]
+      },
+      {
+        "chatId": "chat_3",
+        "participants": ["2", "4"],
+        "messages": [
+          {
+            "id": "msg_5",
+            "senderId": "4",
+            "text": "¿Listas para la presentación de mañana?",
+            "timestamp": "2025-03-16T12:30:00Z",
+            "status": "read"
+          },
+          {
+            "id": "msg_6",
+            "senderId": "2",
+            "text": "Casi, solo falta repasar unos puntos.",
+            "timestamp": "2025-03-16T12:32:00Z",
+            "status": "read"
+          }
+        ]
+      }
+    ],
+    "statuses": [
+      {
+        "userId": "1",
+        "statusId": "status_1",
+        "type": "image",
+        "mediaUrl": "https://source.unsplash.com/random/400x800",
+        "caption": "Día soleado 🌞",
+        "timestamp": "2025-03-16T10:00:00Z",
+        "views": ["2", "3"]
+      },
+      {
+        "userId": "2",
+        "statusId": "status_2",
+        "type": "text",
+        "mediaUrl": null,
+        "caption": "Nunca pares, nunca te conformes. 💪",
+        "timestamp": "2025-03-16T09:30:00Z",
+        "views": ["1", "4"]
+      },
+      {
+        "userId": "3",
+        "statusId": "status_3",
+        "type": "video",
+        "mediaUrl": "https://source.unsplash.com/random/400x800?video",
+        "caption": "Goles y más goles ⚽",
+        "timestamp": "2025-03-16T11:45:00Z",
+        "views": ["1", "4"]
+      }
+    ],
+    "calls": [
+      {
+        "callId": "call_1",
+        "callerId": "1",
+        "receiverId": "2",
+        "type": "voice",
+        "duration": "00:05:23",
+        "timestamp": "2025-03-15T18:45:00Z",
+        "status": "missed"
+      },
+      {
+        "callId": "call_2",
+        "callerId": "3",
+        "receiverId": "1",
+        "type": "video",
+        "duration": "00:12:40",
+        "timestamp": "2025-03-14T21:00:00Z",
+        "status": "completed"
+      },
+      {
+        "callId": "call_3",
+        "callerId": "4",
+        "receiverId": "2",
+        "type": "voice",
+        "duration": "00:08:15",
+        "timestamp": "2025-03-16T17:10:00Z",
+        "status": "completed"
+      }
+    ]
+  }
+  
